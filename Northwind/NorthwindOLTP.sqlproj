@@ -94,7 +94,6 @@
     <Build Include="Views\Summary of Sales by Quarter.sql" />
     <Build Include="Views\Summary of Sales by Year.sql" />
     <Build Include="Stored Procedures\CustOrdersDetail.sql" />
-    <Build Include="Stored Procedures\GetProductChangesByRowVersion.sql" />
     <Build Include="Stored Procedures\GetCustomerChangesByRowVersion.sql" />
     <Build Include="Stored Procedures\CustOrderHist.sql" />
     <Build Include="Stored Procedures\EmployeeSalesbyCountry.sql" />
@@ -104,10 +103,13 @@
     <Build Include="Stored Procedures\SalesbyYear.sql" />
     <Build Include="Stored Procedures\GetDatabaseRowVersion.sql" />
     <Build Include="Stored Procedures\SalesByCategory.sql" />
-    <Build Include="Stored Procedures\GetOrdersChangesByRowVersion.sql" />
     <Build Include="Stored Procedures\GetShipperChangesByRowVersion.sql" />
+    <Build Include="Stored Procedures\GetProductChangesByRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="scripts\Load-data.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Stored Procedures\GetOrdersChangesByRowVersion.sql" />
   </ItemGroup>
 </Project>

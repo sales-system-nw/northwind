@@ -1,3 +1,10 @@
 D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\NorthwindOLTP.sqlproj.AssemblyReference.cache
 D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\Northwind.dll
 D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\Northwind.pdb
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\bin\Debug\NorthwindOLTP.dacpac
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\bin\Debug\Northwind.dll
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\bin\Debug\Northwind.pdb
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\Model.xml
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\refactor.xml
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\postdeploy.sql
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\predeploy.sql
