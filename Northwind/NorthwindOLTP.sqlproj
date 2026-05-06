@@ -110,6 +110,6 @@
     <PostDeploy Include="scripts\Load-data.PostDeployment1.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Stored Procedures\GetOrdersChangesByRowVersion.sql" />
+    <Build Include="Stored Procedures\GetOrdersChangesByRowVersion.sql" />
   </ItemGroup>
 </Project>
