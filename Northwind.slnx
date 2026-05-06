@@ -9,7 +9,7 @@
     <Build />
     <Deploy />
   </Project>
-  <Project Path="NorthwindDW/NorthwindDW.sqlproj" Id="ef91f3af-c900-4dcf-9806-1b08757047cf" DisplayName="NorthWindDW">
+  <Project Path="NorthwindDW/NorthwindDW.sqlproj" Id="ef91f3af-c900-4dcf-9806-1b08757047cf">
     <BuildType Solution="Development|*" Project="Release" />
     <Build />
     <Deploy />

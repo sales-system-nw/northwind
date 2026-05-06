@@ -1,7 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\diplomado\\Modulo 2\\sales-system-nw\\northwind\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindDW\\dbo\\Stored Procedures\\FillDimDate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|solutionrelative:NorthwindDW\\dbo\\Stored Procedures\\FillDimDate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindDW\\dbo\\Stored Procedures\\DW_MergeDimEmployee.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|solutionrelative:NorthwindDW\\dbo\\Stored Procedures\\DW_MergeDimEmployee.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindDW\\dbo\\Stored Procedures\\DW_MergeDimCustomer.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|solutionrelative:NorthwindDW\\dbo\\Stored Procedures\\DW_MergeDimCustomer.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindDW\\dbo\\Stored Procedures\\DW_MergeDimCustomer.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|solutionrelative:NorthwindDW\\dbo\\Stored Procedures\\DW_MergeDimCustomer.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindDW\\dbo\\Stored Procedures\\DW_MergeDimEmployee.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|solutionrelative:NorthwindDW\\dbo\\Stored Procedures\\DW_MergeDimEmployee.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindDW\\dbo\\Stored Procedures\\FillDimDate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{EF91F3AF-C900-4DCF-9806-1B08757047CF}|NorthwindDW\\NorthwindDW.sqlproj|solutionrelative:NorthwindDW\\dbo\\Stored Procedures\\FillDimDate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 864,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FillDimDate.sql ",
+              "DocumentMoniker": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthWindDW\\dbo\\Stored Procedures\\FillDimDate.sql",
+              "RelativeDocumentMoniker": "NorthWindDW\\dbo\\Stored Procedures\\FillDimDate.sql",
+              "ToolTip": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthWindDW\\dbo\\Stored Procedures\\FillDimDate.sql\r\n(TOKA\\TOKO)",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-06T02:35:01.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DW_MergeDimEmployee.sql ",
+              "DocumentMoniker": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthWindDW\\dbo\\Stored Procedures\\DW_MergeDimEmployee.sql",
+              "RelativeDocumentMoniker": "NorthWindDW\\dbo\\Stored Procedures\\DW_MergeDimEmployee.sql",
+              "ToolTip": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthWindDW\\dbo\\Stored Procedures\\DW_MergeDimEmployee.sql\r\n(TOKA\\TOKO)",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-06T02:34:24.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DW_MergeDimCustomer.sql ",
+              "DocumentMoniker": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthWindDW\\dbo\\Stored Procedures\\DW_MergeDimCustomer.sql",
+              "RelativeDocumentMoniker": "NorthWindDW\\dbo\\Stored Procedures\\DW_MergeDimCustomer.sql",
+              "ToolTip": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthWindDW\\dbo\\Stored Procedures\\DW_MergeDimCustomer.sql\r\n(TOKA\\TOKO)",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-06T02:33:34.106Z",
+              "EditorCaption": ""
             }
           ]
         }
