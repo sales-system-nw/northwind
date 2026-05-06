@@ -8,3 +8,13 @@ D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\postdeploy
 D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\predeploy.sql
 D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\NorthWindDW.dll
 D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\NorthWindDW.pdb
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\bin\Debug\NorthwindDW.dacpac
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\obj\Debug\NorthwindDW.sqlproj.AssemblyReference.cache
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\obj\Debug\Model.xml
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\obj\Debug\refactor.xml
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\obj\Debug\postdeploy.sql
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\obj\Debug\predeploy.sql
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\obj\Debug\NorthWindDW.dll
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\obj\Debug\NorthWindDW.pdb
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\bin\Debug\NorthWindDW.dll
+D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\bin\Debug\NorthWindDW.pdb

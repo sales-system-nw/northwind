@@ -108,6 +108,6 @@
     <Build Include="Stored Procedures\GetShipperChangesByRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="scripts\Load-data.PostDeployment.sql" />
+    <PostDeploy Include="scripts\Load-data.PostDeployment1.sql" />
   </ItemGroup>
 </Project>

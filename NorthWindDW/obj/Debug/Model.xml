@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="NorthWindDW.dll" />
-			<Metadata Name="FileName" Value="D:\DIPLOMADO\MODULO 2\SALES-SYSTEM-NW\NORTHWIND\NORTHWINDDW\OBJ\DEBUG\NORTHWINDDW.DLL" />
+			<Metadata Name="FileName" Value="D:\CIENCIA_DATOS\MODULO2\NORTHWIND\NORTHWINDDW\OBJ\DEBUG\NORTHWINDDW.DLL" />
 			<Metadata Name="AssemblyName" Value="NorthWindDW" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\NorthWindDW.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="D:\CIENCIA_DATOS\Modulo2\northwind\NorthwindDW\obj\Debug\NorthWindDW.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
