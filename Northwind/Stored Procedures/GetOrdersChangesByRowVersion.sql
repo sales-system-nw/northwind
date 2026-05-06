@@ -60,4 +60,3 @@ BEGIN
        OR (det.[rowversion] > CONVERT(ROWVERSION, @startRow) 
            AND det.[rowversion] <= CONVERT(ROWVERSION, @endRow));
 END;
-GO

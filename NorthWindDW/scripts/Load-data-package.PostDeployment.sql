@@ -1,30 +1,35 @@
-﻿EXEC sp_MSforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT ALL';
+﻿IF NOT EXISTS(SELECT TOP(1) 1
+              FROM [dbo].[PackageConfig]
+			  WHERE [TableName] = 'Customers')
+ BEGIN
+	INSERT [dbo].[PackageConfig] ([TableName], [LastRowVersion]) VALUES ('Customers', 0)
+ END
 GO
-
-INSERT INTO dbo.PackageConfig
-(PackageID, TableName, LastRowVersion)
-VALUES(1, N'Customers', 56011);
+IF NOT EXISTS(SELECT TOP(1) 1
+              FROM [dbo].[PackageConfig]
+			  WHERE [TableName] = 'Products')
+ BEGIN
+	INSERT [dbo].[PackageConfig] ([TableName], [LastRowVersion]) VALUES ('Products', 0)
+ END
 GO
-
-INSERT INTO dbo.PackageConfig
-(PackageID, TableName, LastRowVersion)
-VALUES(2, N'Products', 56014);
+IF NOT EXISTS(SELECT TOP(1) 1
+              FROM [dbo].[PackageConfig]
+			  WHERE [TableName] = 'Employees')
+ BEGIN
+  INSERT [dbo].[PackageConfig] ([TableName], [LastRowVersion]) VALUES ('Employees', 0)
+ END
 GO
-
-INSERT INTO dbo.PackageConfig
-(PackageID, TableName, LastRowVersion)
-VALUES(3, N'Employees', 56011);
+IF NOT EXISTS(SELECT TOP(1) 1
+              FROM [dbo].[PackageConfig]
+			  WHERE [TableName] = 'Shippers')
+ BEGIN
+	INSERT [dbo].[PackageConfig] ([TableName], [LastRowVersion]) VALUES ('Shippers', 0)
+ END
 GO
-
-INSERT INTO dbo.PackageConfig
-(PackageID, TableName, LastRowVersion)
-VALUES(4, N'Orders', 78000);
-GO
-
-INSERT INTO dbo.PackageConfig
-(PackageID, TableName, LastRowVersion)
-VALUES(5, N'Shippers', 56021);
-GO
-
-EXEC sp_MSforeachtable 'ALTER TABLE ? CHECK CONSTRAINT ALL';
+IF NOT EXISTS(SELECT TOP(1) 1
+              FROM [dbo].[PackageConfig]
+			  WHERE [TableName] = 'Orders')
+ BEGIN
+	INSERT [dbo].[PackageConfig] ([TableName], [LastRowVersion]) VALUES ('Orders', 0)
+ END
 GO
