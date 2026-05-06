@@ -1,0 +1,10 @@
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\bin\Debug\NorthWindDW.dacpac
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\bin\Debug\NorthWindDW.dll
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\bin\Debug\NorthWindDW.pdb
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\NorthWindDW.sqlproj.AssemblyReference.cache
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\Model.xml
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\refactor.xml
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\postdeploy.sql
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\predeploy.sql
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\NorthWindDW.dll
+D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\obj\Debug\NorthWindDW.pdb
