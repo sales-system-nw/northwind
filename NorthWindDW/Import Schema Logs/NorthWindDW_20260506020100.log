@@ -1,0 +1,10 @@
+5/5/2026 22:01:00	This log contains information about the import schema operation into project 'NorthWindDW' on computer 'DESKTOP-HBJ7I3S' by user 'Truji'.
+5/5/2026 22:01:00	Deserializing model
+5/5/2026 22:01:00	Resolving model
+5/5/2026 22:01:00	Visiting imported model for types
+5/5/2026 22:01:01	Scanning project for duplicate elements
+5/5/2026 22:01:01	Finished duplicate element processing
+5/5/2026 22:01:01	Processing extra files
+5/5/2026 22:01:02	Finished importing Data-tier Application file.
+5/5/2026 22:01:02	A summary of the import was saved to the following location: D:\diplomado\Modulo 2\sales-system-nw\northwind\NorthWindDW\Import Schema Logs\NorthWindDW_20260506020100.log
+5/5/2026 22:01:02	Click Finish to continue...

@@ -1,0 +1,3 @@
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\NorthwindOLTP.sqlproj.AssemblyReference.cache
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\Northwind.dll
+D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\Northwind.pdb

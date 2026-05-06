@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[FactOrders] (
+    [OrderID]         INT             NOT NULL,
+    [ProductID]       INT             NOT NULL,
+    [OrderDateKey]    INT             NOT NULL,
+    [RequiredDateKey] INT             NOT NULL,
+    [ShippedDateKey]  INT             NOT NULL,
+    [CustomerSK]      INT             NULL,
+    [ProductSK]       INT             NULL,
+    [EmployeeSK]      INT             NULL,
+    [ShipperSK]       INT             NULL,
+    [Quantity]        INT             NOT NULL,
+    [UnitPrice]       MONEY           NOT NULL,
+    [Discount]        DECIMAL (10, 2) NOT NULL,
+    [OrderDate]       DATE            NOT NULL,
+    [RequiredDate]    DATE            NOT NULL,
+    [ShippedDate]     DATE            NULL,
+    CONSTRAINT [PK_FactOrders] PRIMARY KEY CLUSTERED ([OrderID] ASC, [ProductID] ASC),
+    CONSTRAINT [FK_FactOrders_Customer] FOREIGN KEY ([CustomerSK]) REFERENCES [dbo].[DimCustomer] ([CustomerSK]),
+    CONSTRAINT [FK_FactOrders_Employee] FOREIGN KEY ([EmployeeSK]) REFERENCES [dbo].[DimEmployee] ([EmployeeSK]),
+    CONSTRAINT [FK_FactOrders_OrderDate] FOREIGN KEY ([OrderDateKey]) REFERENCES [dbo].[DimDate] ([DateKey]),
+    CONSTRAINT [FK_FactOrders_Product] FOREIGN KEY ([ProductSK]) REFERENCES [dbo].[DimProduct] ([ProductSK]),
+    CONSTRAINT [FK_FactOrders_RequiredDate] FOREIGN KEY ([RequiredDateKey]) REFERENCES [dbo].[DimDate] ([DateKey]),
+    CONSTRAINT [FK_FactOrders_ShippedDate] FOREIGN KEY ([ShippedDateKey]) REFERENCES [dbo].[DimDate] ([DateKey]),
+    CONSTRAINT [FK_FactOrders_Shipper] FOREIGN KEY ([ShipperSK]) REFERENCES [dbo].[DimShipper] ([ShipperSK])
+);
+

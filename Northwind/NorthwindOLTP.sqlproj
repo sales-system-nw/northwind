@@ -61,6 +61,7 @@
     <Folder Include="Tables" />
     <Folder Include="Views" />
     <Folder Include="Stored Procedures" />
+    <Folder Include="scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Categories.sql" />
@@ -107,6 +108,6 @@
     <Build Include="Stored Procedures\GetShipperChangesByRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Load-data.PostDeployment.sql" />
+    <PostDeploy Include="scripts\Load-data.PostDeployment.sql" />
   </ItemGroup>
 </Project>
