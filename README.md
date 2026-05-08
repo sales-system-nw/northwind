@@ -77,7 +77,7 @@ El Data Warehouse está orientado exclusivamente a análisis y toma de decisione
 
 El Data Warehouse fue diseñado utilizando un modelo estrella, donde una tabla de hechos central se relaciona con múltiples dimensiones.
 
-<img width="594" height="780" alt="image" src="https://github.com/user-attachments/assets/373bba04-0ec4-46be-be2d-ea3c307a4c39" />
+<img width="662" height="832" alt="image" src="https://github.com/user-attachments/assets/f64f8000-3d63-4546-b86a-b355ad83c11f" />
 
 ### Tabla de Hechos
 
