@@ -1,19 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\diplomado\\Modulo 2\\sales-system-nw\\northwind\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91D90034-1FEB-B75F-4E8A-868CF33CCF81}|NorthwindETL\\NorthwindETL.dtproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindETL\\Orders.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{91D90034-1FEB-B75F-4E8A-868CF33CCF81}|NorthwindETL\\NorthwindETL.dtproj|solutionrelative:NorthwindETL\\Orders.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2109099E-59B3-457F-B125-D7FBD128C8A0}|Northwind\\NorthwindOLTP.sqlproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\Northwind\\Stored Procedures\\GetDateMaxMin.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{2109099E-59B3-457F-B125-D7FBD128C8A0}|Northwind\\NorthwindOLTP.sqlproj|solutionrelative:Northwind\\Stored Procedures\\GetDateMaxMin.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D90034-1FEB-B75F-4E8A-868CF33CCF81}|NorthwindETL\\NorthwindETL.dtproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindETL\\Date.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{91D90034-1FEB-B75F-4E8A-868CF33CCF81}|NorthwindETL\\NorthwindETL.dtproj|solutionrelative:NorthwindETL\\Date.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2109099E-59B3-457F-B125-D7FBD128C8A0}|Northwind\\NorthwindOLTP.sqlproj|D:\\CIENCIA_DATOS\\Modulo2\\northwind\\Northwind\\Stored Procedures\\GetDateMaxMin.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{2109099E-59B3-457F-B125-D7FBD128C8A0}|Northwind\\NorthwindOLTP.sqlproj|solutionrelative:Northwind\\Stored Procedures\\GetDateMaxMin.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 864,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Orders.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindETL\\Orders.dtsx",
+              "RelativeDocumentMoniker": "NorthwindETL\\Orders.dtsx",
+              "ToolTip": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindETL\\Orders.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "NorthwindETL\\Orders.dtsx [Dise\u00F1o]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-05-09T05:36:14.858Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Date.dtsx [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindETL\\Date.dtsx",
+              "RelativeDocumentMoniker": "NorthwindETL\\Date.dtsx",
+              "ToolTip": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\NorthwindETL\\Date.dtsx [Dise\u00F1o]",
+              "RelativeToolTip": "NorthwindETL\\Date.dtsx [Dise\u00F1o]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPjVO/S8NAGH2RtvSPaPeSwUVchS6CexYRJCBYUJC6SEFBBIXiIigKEYRSCC4unQTXDsVipkpbUJHSRTQ2/oimNCTnkOTMXdrqg4Pv\u002B\u002B69ly933wkAoFaqBGPQezdx9/CYO9xZOWU2CPF0aqVKXMcZuY7Kl2R6bomsbZ8sMwYAJvjCKOxtraNW1xTe5N8Gm7sHAIBaXVPC9Vg4KZSaNC7KIs0/jQQW5yUAQPn8gnIwrAM7nYGdzjB5cnIGqwuzDC9AxCDebSPebUdyc8DQWPx1Cx\u002BWQzrG722EtZEOeJgDwOgDukUQSyT5bdagUGrSBU6sW4A7ZNwiHQSHGBa/fANvFuDafZ4eNQgOLSx\u002B/gK06xa6dgpZKY\u002BNswbBlELAz0FRFumXjT7Bq\u002BXFpu31XpRFdJ5M3N73sO9rqMGxehWEI5Ci4puWTqsx\u002BK\u002BNnzAeWSlPxWEDgWGNg//PDLSc8AOMxO8cPcnGpQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-05-09T05:09:56.422Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetDateMaxMin.sql",
+              "DocumentMoniker": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\Northwind\\Stored Procedures\\GetDateMaxMin.sql",
+              "RelativeDocumentMoniker": "Northwind\\Stored Procedures\\GetDateMaxMin.sql",
+              "ToolTip": "D:\\CIENCIA_DATOS\\Modulo2\\northwind\\Northwind\\Stored Procedures\\GetDateMaxMin.sql",
+              "RelativeToolTip": "Northwind\\Stored Procedures\\GetDateMaxMin.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-09T05:07:10.649Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 43,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f4e46f1e-cf83-40aa-b568-a627394bc994}"
             }
           ]
         }

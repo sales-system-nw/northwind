@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="Northwind.dll" />
-			<Metadata Name="FileName" Value="D:\DIPLOMADO\MODULO 2\SALES-SYSTEM-NW\NORTHWIND\NORTHWIND\OBJ\DEBUG\NORTHWIND.DLL" />
+			<Metadata Name="FileName" Value="D:\CIENCIA_DATOS\MODULO2\NORTHWIND\NORTHWIND\OBJ\DEBUG\NORTHWIND.DLL" />
 			<Metadata Name="AssemblyName" Value="Northwind" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="D:\diplomado\Modulo 2\sales-system-nw\northwind\Northwind\obj\Debug\Northwind.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\obj\Debug\Northwind.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
@@ -2367,6 +2367,54 @@ END]]></Value>
 				<Property Name="HeaderContents" Value="&#xD;&#xA;CREATE PROCEDURE [dbo].[GetDatabaseRowVersion]&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[GetDateMaxMin]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+       minOrderDate = cast(min(OrderDate)as date) ,
+       maxOrderDate = cast( (
+       SELECT MAX(v) 
+       FROM (VALUES (MAX(OrderDate)), (MAX(RequiredDate)), (MAX(ShippedDate))) AS t(v))as date)
+    FROM [dbo].[Orders] s
+ END;]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[date]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[OrderDate]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[date]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[RequiredDate]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[ShippedDate]" />
+				</Entry>
+				<Entry />
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="323" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetDateMaxMin]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[GetEmployeeChangesByRowVersion]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
@@ -2582,6 +2630,245 @@ END]]></Value>
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="&#xD;&#xA;CREATE   PROCEDURE [dbo].[GetEmployeeChangesByRowVersion]&#xD;&#xA;(&#xD;&#xA;   @startRow BIGINT &#xD;&#xA;   ,@endRow  BIGINT &#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[GetOrdersChangesByRowVersion]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        ord.[OrderID],
+        det.[ProductID]
+        ,OrderDateKey = CONVERT(INT,
+							(CONVERT(CHAR(4),DATEPART(YEAR,ord.[OrderDate]))
+						  + CASE 
+								WHEN DATEPART(MONTH,ord.[OrderDate]) < 10 THEN '0' + CONVERT(CHAR(1),DATEPART(MONTH,ord.[OrderDate]))
+								ELSE + CONVERT(CHAR(2),DATEPART(MONTH,ord.[OrderDate]))
+							END
+						  + CASE 
+								WHEN DATEPART(DAY,ord.[OrderDate]) < 10 THEN '0' + CONVERT(CHAR(1),DATEPART(DAY,ord.[OrderDate]))
+								ELSE + CONVERT(CHAR(2),DATEPART(DAY,ord.[OrderDate]))
+							END))
+		  ,RequiredDateKey = CONVERT(INT,
+							(CONVERT(CHAR(4),DATEPART(YEAR,ord.[RequiredDate]))
+						  + CASE 
+								WHEN DATEPART(MONTH,ord.[RequiredDate]) < 10 THEN '0' + CONVERT(CHAR(1),DATEPART(MONTH,ord.[RequiredDate]))
+								ELSE + CONVERT(CHAR(2),DATEPART(MONTH,ord.[RequiredDate]))
+							END
+						  + CASE 
+								WHEN DATEPART(DAY,ord.[RequiredDate]) < 10 THEN '0' + CONVERT(CHAR(1),DATEPART(DAY,ord.[RequiredDate]))
+								ELSE + CONVERT(CHAR(2),DATEPART(DAY,ord.[RequiredDate]))
+							END))
+		  ,ShippedDateKey = CASE
+							WHEN ord.[ShippedDate] IS NULL THEN 0
+							ELSE (CONVERT(INT,
+										(CONVERT(CHAR(4),DATEPART(YEAR,ord.[ShippedDate]))
+										+ CASE 
+											WHEN DATEPART(MONTH,ord.[ShippedDate]) < 10 THEN '0' + CONVERT(CHAR(1),DATEPART(MONTH,ord.[ShippedDate]))
+											ELSE + CONVERT(CHAR(2),DATEPART(MONTH,ord.[ShippedDate]))
+										END
+										+ CASE 
+											WHEN DATEPART(DAY,ord.[ShippedDate]) < 10 THEN '0' + CONVERT(CHAR(1),DATEPART(DAY,ord.[ShippedDate]))
+											ELSE + CONVERT(CHAR(2),DATEPART(DAY,ord.[ShippedDate]))
+										END)))
+							END,
+        ord.[CustomerID],
+        ord.[EmployeeID],
+        ord.[ShipVia],
+        det.[Quantity],
+        det.[UnitPrice],
+        [Discount] = CAST(det.[Discount] AS DECIMAL(10,2)),
+        [OrderDate]    = CAST(ord.[OrderDate] AS DATE),
+        [RequiredDate] = CAST(ord.[RequiredDate] AS DATE),
+        [ShippedDate]  = CAST(ord.[ShippedDate] AS DATE)
+
+    FROM [dbo].[Orders] ord
+    INNER JOIN [dbo].[OrderDetails] det ON ord.[OrderID] = det.[OrderID]
+    WHERE (ord.[rowversion] > CONVERT(ROWVERSION, @startRow) 
+           AND ord.[rowversion] <= CONVERT(ROWVERSION, @endRow))
+       OR (det.[rowversion] > CONVERT(ROWVERSION, @startRow) 
+           AND det.[rowversion] <= CONVERT(ROWVERSION, @endRow));
+END;]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[OrderDetails]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[OrderID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[OrderDetails].[OrderID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[OrderDetails].[ProductID]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[OrderDate]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[RequiredDate]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[ShippedDate]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[char]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[CustomerID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[EmployeeID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[ShipVia]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[OrderDetails].[Quantity]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[OrderDetails].[UnitPrice]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[decimal]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[OrderDetails].[Discount]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[date]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[date]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[date]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Orders].[rowversion]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[rowversion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[GetOrdersChangesByRowVersion].[@startRow]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[rowversion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[GetOrdersChangesByRowVersion].[@endRow]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[OrderDetails].[rowversion]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[rowversion]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[rowversion]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[GetOrdersChangesByRowVersion].[@startRow]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[GetOrdersChangesByRowVersion].[@endRow]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bigint]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="2572" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetOrdersChangesByRowVersion]&#xD;&#xA;(&#xD;&#xA;   @startRow BIGINT,&#xD;&#xA;   @endRow   BIGINT&#xD;&#xA;)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[GetProductChangesByRowVersion]">
