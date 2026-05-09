@@ -105,6 +105,7 @@
     <Build Include="Stored Procedures\SalesByCategory.sql" />
     <Build Include="Stored Procedures\GetShipperChangesByRowVersion.sql" />
     <Build Include="Stored Procedures\GetProductChangesByRowVersion.sql" />
+    <Build Include="Stored Procedures\GetDateMaxMin.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="scripts\Load-data.PostDeployment1.sql" />

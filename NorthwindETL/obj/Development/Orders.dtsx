@@ -11,8 +11,8 @@
   DTS:LocaleID="16394"
   DTS:ObjectName="Orders"
   DTS:PackageType="5"
-  DTS:VersionBuild="60"
-  DTS:VersionGUID="{F2A95265-F629-45D7-9719-F20B31FA2097}">
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{046BC73F-F9C1-44B0-A55B-F869FB968B00}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWind-v2;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Customers-{F25F4F4F-6B40-46A1-9154-33561C978DA6}localhost.Northwind;" />
+          DTS:ConnectionString="Data Source=TOKA;Initial Catalog=NorthwindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Customers-{F25F4F4F-6B40-46A1-9154-33561C978DA6}localhost.Northwind;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthwindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Customers-{2CE74C9D-3F45-462E-9949-072216844901}localhost.NorthwindBI;" />
+          DTS:ConnectionString="Data Source=TOKA;Initial Catalog=NorthwindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Customers-{2CE74C9D-3F45-462E-9949-072216844901}localhost.NorthwindBI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1937,39 +1937,39 @@ where [refTable].[ShipperID] = ?</property>
       DTS:To="Package\Execute SQL Task" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
-<!--If you manually edit this section and make a mistake, you can delete it. -->
-<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
 <Objects
   Version="8">
-  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156.571428571429,42.2857142857143"
+          Size="157,42"
           Id="Package\Clear-up staging"
           TopLeft="219.999995993243,171.826083728181" />
         <NodeLayout
-          Size="164,42.2857142857143"
+          Size="164,42"
           Id="Package\Execute SQL Task"
           TopLeft="207.77777399362,401.304340286213" />
         <NodeLayout
-          Size="204.571428571429,42.2857142857143"
+          Size="205,42"
           Id="Package\Get Database Row Version"
           TopLeft="195.555551993994,34.4782602217732" />
         <NodeLayout
-          Size="176.571428571429,42.2857142857143"
+          Size="177,42"
           Id="Package\Get Last RowVersion"
           TopLeft="208.333329539056,104.56521542669" />
         <NodeLayout
-          Size="137.142857142858,42.2857142857143"
+          Size="137,42"
           Id="Package\Load Orders"
           TopLeft="223.333329265869,247.565212739945" />
         <NodeLayout
-          Size="129.714285714286,42.2857142857143"
+          Size="130,42"
           Id="Package\Sin-Stiging"
           TopLeft="231.666662447431,329.521732939242" />
         <EdgeLayout
@@ -2333,7 +2333,7 @@ where [refTable].[ShipperID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2377,7 +2377,7 @@ where [refTable].[ShipperID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2400,7 +2400,7 @@ where [refTable].[ShipperID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -2423,7 +2423,7 @@ where [refTable].[ShipperID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
