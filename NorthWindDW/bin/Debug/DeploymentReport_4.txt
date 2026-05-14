@@ -1,0 +1,30 @@
+﻿** Aspectos destacados
+     Tablas que se volverán a crear con los datos migrados
+       Ninguno
+     Índices clúster que se van a quitar
+       Ninguno
+     Índices clúster que se van a crear
+       Ninguno
+     Posibles incidencias de datos
+       Se está quitando la columna [dbo].[DimEmployee].[Photo]; puede que se pierdan datos.
+       Se está quitando la columna [dbo].[DimEmployee].[RegionDescription]; puede que se pierdan datos.
+       Se está quitando la columna [dbo].[DimEmployee].[TerritoryDescription]; puede que se pierdan datos.
+       Se está quitando la columna [staging].[Employee].[Photo]; puede que se pierdan datos.
+       Se está quitando la columna [staging].[Employee].[RegionDescription]; puede que se pierdan datos.
+       Se está quitando la columna [staging].[Employee].[TerritoryDescription]; puede que se pierdan datos.
+
+** Acciones del usuario
+     Modificar
+       [dbo].[DimEmployee] (Tabla)
+       [staging].[Employee] (Tabla)
+       [dbo].[DW_MergeDimEmployee] (Procedimiento)
+
+** Acciones de compatibilidad
+
+Se está quitando la columna [dbo].[DimEmployee].[Photo]; puede que se pierdan datos.
+Se está quitando la columna [dbo].[DimEmployee].[RegionDescription]; puede que se pierdan datos.
+Se está quitando la columna [dbo].[DimEmployee].[TerritoryDescription]; puede que se pierdan datos.
+Se está quitando la columna [staging].[Employee].[Photo]; puede que se pierdan datos.
+Se está quitando la columna [staging].[Employee].[RegionDescription]; puede que se pierdan datos.
+Se está quitando la columna [staging].[Employee].[TerritoryDescription]; puede que se pierdan datos.
+

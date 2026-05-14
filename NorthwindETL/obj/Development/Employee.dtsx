@@ -11,8 +11,8 @@
   DTS:LocaleID="16394"
   DTS:ObjectName="Employee"
   DTS:PackageType="5"
-  DTS:VersionBuild="38"
-  DTS:VersionGUID="{03705BFB-03B7-425E-8FFA-72458F1414BB}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{D8B4EE01-2FED-4A79-903F-75F2784430F0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -213,7 +213,7 @@ where [refTable].[EmployeeID] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indica si se debe hacer referencia a metadatos en formato XML."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="EmployeeSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FirstName" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Title" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TitleOfCourtesy" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BirthDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HireDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Address" dataType="DT_WSTR" length="60" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="City" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Region" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PostalCode" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Country" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HomePhone" dataType="DT_WSTR" length="24" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Extension" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Photo" dataType="DT_IMAGE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Notes" dataType="DT_NTEXT" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ReportsTo" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PhotoPath" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TerritoryDescription" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RegionDescription" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="EmployeeSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastName" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FirstName" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Title" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TitleOfCourtesy" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BirthDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HireDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Address" dataType="DT_WSTR" length="60" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="City" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Region" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PostalCode" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Country" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HomePhone" dataType="DT_WSTR" length="24" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Extension" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Notes" dataType="DT_NTEXT" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ReportsTo" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PhotoPath" dataType="DT_WSTR" length="255" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -249,11 +249,11 @@ where [refTable].[EmployeeID] = ?</property>
                       <properties>
                         <property
                           dataType="System.String"
-                          description="Especifica la columna de la tabla de referencia con la que se combina una columna."
+                          description="Specifies the column in the reference table that a column joins."
                           name="JoinToReferenceColumn">EmployeeID</property>
                         <property
                           dataType="System.Null"
-                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          description="Specifies the column in the reference table from which a column is copied."
                           name="CopyFromReferenceColumn" />
                       </properties>
                     </inputColumn>
@@ -272,14 +272,14 @@ where [refTable].[EmployeeID] = ?</property>
                     <outputColumn
                       refId="Package\Load Employee\Búsqueda.Outputs[Salida de entradas coincidentes de búsqueda].Columns[EmployeeSK]"
                       dataType="i4"
-                      errorOrTruncationOperation="Copiar columna"
+                      errorOrTruncationOperation="Copy Column"
                       lineageId="Package\Load Employee\Búsqueda.Outputs[Salida de entradas coincidentes de búsqueda].Columns[EmployeeSK]"
                       name="EmployeeSK"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
-                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          description="Specifies the column in the reference table from which a column is copied."
                           name="CopyFromReferenceColumn">EmployeeSK</property>
                       </properties>
                     </outputColumn>
@@ -517,15 +517,6 @@ where [refTable].[EmployeeID] = ?</property>
                       name="Extension"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[Photo]"
-                      dataType="image"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].ExternalColumns[Photo]"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[Photo]"
-                      name="Photo"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[Notes]"
                       dataType="nText"
                       errorOrTruncationOperation="Conversión"
@@ -552,26 +543,6 @@ where [refTable].[EmployeeID] = ?</property>
                       length="255"
                       lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[PhotoPath]"
                       name="PhotoPath"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[TerritoryDescription]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].ExternalColumns[TerritoryDescription]"
-                      length="50"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[TerritoryDescription]"
-                      name="TerritoryDescription"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[RegionDescription]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversión"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].ExternalColumns[RegionDescription]"
-                      length="50"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[RegionDescription]"
-                      name="RegionDescription"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -644,10 +615,6 @@ where [refTable].[EmployeeID] = ?</property>
                       length="4"
                       name="Extension" />
                     <externalMetadataColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].ExternalColumns[Photo]"
-                      dataType="image"
-                      name="Photo" />
-                    <externalMetadataColumn
                       refId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].ExternalColumns[Notes]"
                       dataType="nText"
                       name="Notes" />
@@ -660,16 +627,6 @@ where [refTable].[EmployeeID] = ?</property>
                       dataType="wstr"
                       length="255"
                       name="PhotoPath" />
-                    <externalMetadataColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].ExternalColumns[TerritoryDescription]"
-                      dataType="wstr"
-                      length="50"
-                      name="TerritoryDescription" />
-                    <externalMetadataColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].ExternalColumns[RegionDescription]"
-                      dataType="wstr"
-                      length="50"
-                      name="RegionDescription" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -759,11 +716,6 @@ where [refTable].[EmployeeID] = ?</property>
                       lineageId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[Extension]"
                       name="Extension" />
                     <outputColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[Photo]"
-                      dataType="image"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[Photo]"
-                      name="Photo" />
-                    <outputColumn
                       refId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[Notes]"
                       dataType="nText"
                       lineageId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[Notes]"
@@ -779,18 +731,6 @@ where [refTable].[EmployeeID] = ?</property>
                       length="255"
                       lineageId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[PhotoPath]"
                       name="PhotoPath" />
-                    <outputColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[TerritoryDescription]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[TerritoryDescription]"
-                      name="TerritoryDescription" />
-                    <outputColumn
-                      refId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[RegionDescription]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[RegionDescription]"
-                      name="RegionDescription" />
                     <outputColumn
                       refId="Package\Load Employee\Get Employee.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -962,12 +902,6 @@ where [refTable].[EmployeeID] = ?</property>
                       externalMetadataColumnId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[Extension]"
                       lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[Extension]" />
                     <inputColumn
-                      refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].Columns[Photo]"
-                      cachedDataType="image"
-                      cachedName="Photo"
-                      externalMetadataColumnId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[Photo]"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[Photo]" />
-                    <inputColumn
                       refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].Columns[Notes]"
                       cachedDataType="nText"
                       cachedName="Notes"
@@ -986,20 +920,6 @@ where [refTable].[EmployeeID] = ?</property>
                       cachedName="PhotoPath"
                       externalMetadataColumnId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[PhotoPath]"
                       lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[PhotoPath]" />
-                    <inputColumn
-                      refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].Columns[TerritoryDescription]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="TerritoryDescription"
-                      externalMetadataColumnId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[TerritoryDescription]"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[TerritoryDescription]" />
-                    <inputColumn
-                      refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].Columns[RegionDescription]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="RegionDescription"
-                      externalMetadataColumnId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[RegionDescription]"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[RegionDescription]" />
                     <inputColumn
                       refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].Columns[FirstName]"
                       cachedDataType="wstr"
@@ -1084,10 +1004,6 @@ where [refTable].[EmployeeID] = ?</property>
                       length="4"
                       name="Extension" />
                     <externalMetadataColumn
-                      refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[Photo]"
-                      dataType="image"
-                      name="Photo" />
-                    <externalMetadataColumn
                       refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[Notes]"
                       dataType="nText"
                       name="Notes" />
@@ -1100,16 +1016,6 @@ where [refTable].[EmployeeID] = ?</property>
                       dataType="wstr"
                       length="255"
                       name="PhotoPath" />
-                    <externalMetadataColumn
-                      refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[TerritoryDescription]"
-                      dataType="wstr"
-                      length="50"
-                      name="TerritoryDescription" />
-                    <externalMetadataColumn
-                      refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[RegionDescription]"
-                      dataType="wstr"
-                      length="50"
-                      name="RegionDescription" />
                     <externalMetadataColumn
                       refId="Package\Load Employee\Load dim.Inputs[Entrada de destino de OLE DB].ExternalColumns[LastName]"
                       dataType="wstr"
@@ -1304,12 +1210,6 @@ where [refTable].[EmployeeID] = ?</property>
                       externalMetadataColumnId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[Extension]"
                       lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[Extension]" />
                     <inputColumn
-                      refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].Columns[Photo]"
-                      cachedDataType="image"
-                      cachedName="Photo"
-                      externalMetadataColumnId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[Photo]"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[Photo]" />
-                    <inputColumn
                       refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].Columns[Notes]"
                       cachedDataType="nText"
                       cachedName="Notes"
@@ -1328,20 +1228,6 @@ where [refTable].[EmployeeID] = ?</property>
                       cachedName="PhotoPath"
                       externalMetadataColumnId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[PhotoPath]"
                       lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[PhotoPath]" />
-                    <inputColumn
-                      refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].Columns[TerritoryDescription]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="TerritoryDescription"
-                      externalMetadataColumnId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[TerritoryDescription]"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[TerritoryDescription]" />
-                    <inputColumn
-                      refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].Columns[RegionDescription]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="RegionDescription"
-                      externalMetadataColumnId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[RegionDescription]"
-                      lineageId="Package\Load Employee\Get Employee.Outputs[Salida de origen de OLE DB].Columns[RegionDescription]" />
                     <inputColumn
                       refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].Columns[LastName]"
                       cachedDataType="wstr"
@@ -1415,10 +1301,6 @@ where [refTable].[EmployeeID] = ?</property>
                       length="4"
                       name="Extension" />
                     <externalMetadataColumn
-                      refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[Photo]"
-                      dataType="image"
-                      name="Photo" />
-                    <externalMetadataColumn
                       refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[Notes]"
                       dataType="nText"
                       name="Notes" />
@@ -1431,16 +1313,6 @@ where [refTable].[EmployeeID] = ?</property>
                       dataType="wstr"
                       length="255"
                       name="PhotoPath" />
-                    <externalMetadataColumn
-                      refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[TerritoryDescription]"
-                      dataType="wstr"
-                      length="50"
-                      name="TerritoryDescription" />
-                    <externalMetadataColumn
-                      refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[RegionDescription]"
-                      dataType="wstr"
-                      length="50"
-                      name="RegionDescription" />
                     <externalMetadataColumn
                       refId="Package\Load Employee\Load staging.Inputs[Entrada de destino de OLE DB].ExternalColumns[LastName]"
                       dataType="wstr"
@@ -1710,19 +1582,19 @@ where [refTable].[EmployeeID] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="144.571428571429,42.2857142857143"
+          Size="145,42"
           Id="Package\Load Employee\Get Employee"
           TopLeft="307.222216626929,55.3913033071111" />
         <NodeLayout
-          Size="139.428571428572,42.2857142857143"
+          Size="139,42"
           Id="Package\Load Employee\Load staging"
           TopLeft="60.5555544526858,289.391298910621" />
         <NodeLayout
-          Size="122.857142857143,42.2857142857143"
+          Size="123,42"
           Id="Package\Load Employee\Load dim"
           TopLeft="535.555545801735,305.78260295048" />
         <NodeLayout
-          Size="125.142857142858,42.2857142857143"
+          Size="125,42"
           Id="Package\Load Employee\Búsqueda"
           TopLeft="312.222216535866,151.478258023528" />
         <EdgeLayout
@@ -1862,7 +1734,7 @@ where [refTable].[EmployeeID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1872,7 +1744,7 @@ where [refTable].[EmployeeID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
