@@ -14,7 +14,3 @@ D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\bin\Debug\Northwind.pdb
 D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\obj\Debug\NorthwindOLTP.sqlproj.AssemblyReference.cache
 D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\obj\Debug\Northwind.dll
 D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\obj\Debug\Northwind.pdb
-D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\obj\Debug\Model.xml
-D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\obj\Debug\refactor.xml
-D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\obj\Debug\postdeploy.sql
-D:\CIENCIA_DATOS\Modulo2\northwind\Northwind\obj\Debug\predeploy.sql

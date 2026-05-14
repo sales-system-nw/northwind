@@ -16,12 +16,9 @@ BEGIN
         de.[Country] = se.[Country],
         de.[HomePhone] = se.[HomePhone],
         de.[Extension] = se.[Extension],
-        de.[Photo] = se.[Photo],
         de.[Notes] = se.[Notes],
         de.[ReportsTo] = se.[ReportsTo],
-        de.[PhotoPath] = se.[PhotoPath],
-        de.[TerritoryDescription] = se.[TerritoryDescription],
-        de.[RegionDescription] = se.[RegionDescription]
+        de.[PhotoPath] = se.[PhotoPath]
     FROM [dbo].[DimEmployee] de
     INNER JOIN [staging].[Employee] se ON (de.[EmployeeSK] = se.[EmployeeSK]);
 END;

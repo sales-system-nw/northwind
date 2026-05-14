@@ -14,12 +14,9 @@
     [Country]              NVARCHAR (15)  NULL,
     [HomePhone]            NVARCHAR (24)  NULL,
     [Extension]            NVARCHAR (4)   NULL,
-    [Photo]                IMAGE          NULL,
     [Notes]                NVARCHAR (MAX) NULL,
     [ReportsTo]            INT            NULL,
     [PhotoPath]            NVARCHAR (255) NULL,
-    [TerritoryDescription] NVARCHAR (50)  NULL,
-    [RegionDescription]    NVARCHAR (50)  NULL,
     CONSTRAINT [PK_DimEmployee] PRIMARY KEY CLUSTERED ([EmployeeSK] ASC)
 );
 
