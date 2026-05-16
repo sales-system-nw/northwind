@@ -4,16 +4,13 @@ Este documento resume los puntos clave para la presentación del proyecto de Bus
 
 ---
 
-## 1. Identidad de Marca
-![Logo Northwind Trading](file:///C:/Users/Truji/.gemini/antigravity/brain/929b909c-fc06-4e52-954f-20aa95779231/northwind_trading_logo_1778903009368.png)
-
-*   **Concepto:** Diseño moderno que integra la brújula (dirección) y el viento (logística/movimiento).
-*   **Colores:** Azul Naval y Plata para transmitir profesionalismo y confianza.
+## 1. Identidad de Marc
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ca9c6b08-d01c-48d9-92b3-3c31df988b77" />
 
 ---
 
 ## 2. Desempeño Logístico (Average Delivery)
-![Dashboard Logística](file:///C:/Users/Truji/.gemini/antigravity/brain/929b909c-fc06-4e52-954f-20aa95779231/media__1778903876937.png)
+<img width="1793" height="1009" alt="image" src="https://github.com/user-attachments/assets/2dd9601b-e461-4f97-9828-a6e96da29b92" />
 
 *   **Métricas Clave:**
     *   **Avg Delivery Time:** Evalúa la rapidez de los transportistas. Vital para optimizar tiempos de tránsito.
@@ -23,7 +20,7 @@ Este documento resume los puntos clave para la presentación del proyecto de Bus
 ---
 
 ## 3. Rendimiento de Productos (Product Performance)
-![Dashboard Productos](file:///C:/Users/Truji/.gemini/antigravity/brain/929b909c-fc06-4e52-954f-20aa95779231/media__1778903896883.png)
+<img width="1781" height="1001" alt="image" src="https://github.com/user-attachments/assets/ca15983a-0a43-4b77-8cc1-04e5cd13fa92" />
 
 *   **Métricas Clave:**
     *   **Total Quantity:** Identifica productos "estrella" por volumen. Crucial para gestión de almacén.
@@ -33,7 +30,7 @@ Este documento resume los puntos clave para la presentación del proyecto de Bus
 ---
 
 ## 4. Preferencias de Clientes (Customer Preferences)
-![Dashboard Clientes](file:///C:/Users/Truji/.gemini/antigravity/brain/929b909c-fc06-4e52-954f-20aa95779231/media__1778904288816.png)
+<img width="1945" height="1002" alt="image" src="https://github.com/user-attachments/assets/fcbf7127-7f18-451b-a42a-43d98d844f65" />
 
 *   **Métricas Clave:**
     *   **Total Quantity vs. Net Sales:** Permite diferenciar entre clientes que compran por volumen y clientes de alto valor monetario.
